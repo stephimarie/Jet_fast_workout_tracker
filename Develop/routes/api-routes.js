@@ -12,3 +12,14 @@ module.exports = (app) => {
             console.log("api/workouts error: ", err);
         });
     }); 
+
+        app.get("/api/workouts", (req, res) => {
+        db.find({}, (error, data) => {
+            if (error) {
+                res.send(error);
+            } else {
+                console.log("find= ", data);
+                res.json(data);
+            }
+        });
+    })
