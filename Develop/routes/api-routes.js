@@ -23,3 +23,12 @@ module.exports = (app) => {
             }
         });
     })
+
+    app.get("/api/workouts/range", (req, res) => {
+        db.find()
+        .then(workout => res.json(workout))
+        .catch((e) => {
+            console.log("api/workouts/range ", e);
+        });
+    
+    })
