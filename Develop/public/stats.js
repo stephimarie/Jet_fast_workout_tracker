@@ -178,11 +178,14 @@ function calculateTotalWeight(data) {
   let totals = [];
 
   data.forEach((workout) => {
-    workout.exercises.forEach(exercise => {
-      totals.push(exercise.weight);
-    })
-
-    return total;
+    const workoutTotal = workout.exercises.reduce((total, {type, weight}) => {
+      if (type === 'resistance') {
+        return total + weight;
+      } else {
+        return total;
+      }
+    }, 0)
+    totals.push(workoutTotal);
   });
 
   return totals;
