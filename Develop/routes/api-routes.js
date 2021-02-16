@@ -32,3 +32,22 @@ module.exports = (app) => {
         });
     
     })
+
+
+    app.put("/api/workouts/:id", (req, res) => {
+        console.log("line36 req.body= ",req.body);
+        db.findByIdAndUpdate(req.params.id, {
+            $push: {
+                exercises: req.body
+            }
+        }, {
+            new: true
+        })
+        .then((data) => res.json(data))
+        .catch((e) => {
+            console.log("api/workouts/:id ", e);
+        });
+        
+    });
+
+}
