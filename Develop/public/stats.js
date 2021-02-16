@@ -201,7 +201,7 @@ function workoutNames(data) {
   });
 
   // return de-duplicated array with JavaScript `Set` object
-  return workouts
+  return [...new Set(workouts)];
 }
 
-
+API.getWorkoutsInRange().then(populateChart);
