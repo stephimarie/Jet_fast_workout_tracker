@@ -3,7 +3,7 @@ let db = require("../models");
 
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
 });
 
 let workoutSeed = [{
@@ -15,8 +15,7 @@ let workoutSeed = [{
         weight: 100,
         reps: 10,
         sets: 4
-      }
-    ]
+      }, ],
   },
   {
     day: new Date().setDate(new Date().getDate()-9),
@@ -31,40 +30,34 @@ let workoutSeed = [{
   },
   {
     day: new Date().setDate(new Date().getDate()-8),
-    exercises: [
-      {
+    exercises: [{
         type: "resistance",
         name: "Push Press",
         duration: 25,
         weight: 185,
         reps: 8,
         sets: 4
-      }
-    ]
+      }, ],
   },
   {
     day: new Date().setDate(new Date().getDate()-7),
-    exercises: [
-      {
+    exercises: [{
         type: "cardio",
         name: "Running",
         duration: 25,
         distance: 4
-      }
-    ]
+      }, ],
   },
   {
     day: new Date().setDate(new Date().getDate()-6),
-    exercises: [
-      {
+    exercises: [{
         type: "resistance",
         name: "Bench Press",
         duration: 20,
         weight: 285,
         reps: 10,
         sets: 4
-      }
-    ]
+      }, ],
   },
   {
     day: new Date().setDate(new Date().getDate()-5),
