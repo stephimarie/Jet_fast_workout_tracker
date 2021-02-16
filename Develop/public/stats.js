@@ -1,14 +1,4 @@
 
-fetch("/api/workouts/range")
-.then(response => {
-  return response.json();
-})
-.then(data => {
-  populateChart(data);
-})
-
-    API.getWorkoutsInRange()
-
 function generatePalette() {
   const arr = [
     '#003f5c',
