@@ -7,30 +7,31 @@ const workoutSchema = new Schema({
         type: Date,
         default: Date.now
     },
-
-    exercises: [{
-        name: {
-            type: String
-        }, 
-        type: {
-            type: String
+    exercises: [
+        {
+            name: {
+                type: String
+            }, 
+            type: {
+                type: String
+            },
+            weight: {
+                type: Number
+            },
+            reps: {
+                type: Number
+            },
+            duration: {
+                type: Number
+            },
+            distance: {
+                type: Number
+            },
+            sets: {
+                type: Number
+            },
         },
-        weight: {
-            type: Number
-        },
-        reps: {
-            type: Number
-        },
-        duration: {
-            type: Number
-        },
-        distance: {
-            type: Number
-        },
-        sets: {
-            type: Number
-        }
-    }]
+    ],
 }, {
     toJSON: {
         virtuals: true
