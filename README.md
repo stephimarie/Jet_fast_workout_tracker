@@ -33,8 +33,7 @@ The user is be able to:
 * Mongoose
 * Express
 
-## Github Links
+## Heroku Links
 [Jet_fast_workout_tracker](https://stephimarie.github.io/Password_Wizard/.)
-
 
 
