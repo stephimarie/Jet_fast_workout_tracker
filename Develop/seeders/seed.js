@@ -18,7 +18,7 @@ let workoutSeed = [{
       }, ],
   },
   {
-    day: new Date().setDate(new Date().getDate()-9),
+    day: new Date().setDate(new Date().getDate() - 9),
     exercises: [{
         type: "resistance",
         name: "Lateral Pull",
@@ -29,7 +29,7 @@ let workoutSeed = [{
       }, ],
   },
   {
-    day: new Date().setDate(new Date().getDate()-8),
+    day: new Date().setDate(new Date().getDate() - 8),
     exercises: [{
         type: "resistance",
         name: "Push Press",
@@ -40,7 +40,7 @@ let workoutSeed = [{
       }, ],
   },
   {
-    day: new Date().setDate(new Date().getDate()-7),
+    day: new Date().setDate(new Date().getDate() - 7),
     exercises: [{
         type: "cardio",
         name: "Running",
@@ -49,7 +49,7 @@ let workoutSeed = [{
       }, ],
   },
   {
-    day: new Date().setDate(new Date().getDate()-6),
+    day: new Date().setDate(new Date().getDate() - 6),
     exercises: [{
         type: "resistance",
         name: "Bench Press",
@@ -60,60 +60,52 @@ let workoutSeed = [{
       }, ],
   },
   {
-    day: new Date().setDate(new Date().getDate()-5),
-    exercises: [
-      {
+    day: new Date().setDate(new Date().getDate() - 5),
+    exercises: [{
         type: "resistance",
         name: "Bench Press",
         duration: 20,
         weight: 300,
         reps: 10,
         sets: 4
-      }
-    ]
+      }, ],
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 4)),
-    exercises: [
-      {
+    exercises: [{
         type: "resistance",
         name: "Quad Press",
         duration: 30,
         weight: 300,
         reps: 10,
         sets: 4
-      }
-    ]
+      }, ],
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 3)),
-    exercises: [
-      {
+    exercises: [{
         type: "resistance",
         name: "Bench Press",
         duration: 20,
         weight: 300,
         reps: 10,
         sets: 4
-      }
-    ]
+      }, ],
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 2)),
-    exercises: [
-      {
+    exercises: [{
         type: "resistance",
         name: "Military Press",
         duration: 20,
         weight: 300,
         reps: 10,
         sets: 4
-      }
-    ]
-  }
+      }, ],
+  },
 ];
 
-db.deleteMany({})
+db.Workout.deleteMany({})
   .then(() => db.collection.insertMany(workoutSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
