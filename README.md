@@ -21,5 +21,20 @@ The user is be able to:
   * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
 
   * View the total duration of each workout from the past seven workouts on the `stats` page.
+  
+
+## Screenshot of Website:
+<img width="1237" alt="Screen Shot 2021-01-04 at 11 11 12 PM" src="https://user-images.githubusercontent.com/71304781/103616968-38f3a880-4ee2-11eb-9825-cf6fd042aed9.png">
+
+
+
+## BuiltWith:
+
+* HTML
+* CSS
+
+## Github Links
+[Password Wizard](https://stephimarie.github.io/Password_Wizard/.)
+
 
 
