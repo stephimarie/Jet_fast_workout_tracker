@@ -24,7 +24,8 @@ The user is be able to:
   
 
 ## Screenshot of Website:
-<img width="1237" alt="Screen Shot 2021-01-04 at 11 11 12 PM" src="https://user-images.githubusercontent.com/71304781/103616968-38f3a880-4ee2-11eb-9825-cf6fd042aed9.png">
+<img width="1431" alt="Screen Shot 2021-02-16 at 6 00 15 PM" src="https://user-images.githubusercontent.com/71304781/108145860-fd233580-7080-11eb-9ba4-d2f82cbbab95.png">
+
 
 
 
@@ -32,9 +33,12 @@ The user is be able to:
 
 * HTML
 * CSS
+* MongoDB
+* Mongoose
+* Express
 
 ## Github Links
-[Password Wizard](https://stephimarie.github.io/Password_Wizard/.)
+[Jet_fast_workout_tracker](https://stephimarie.github.io/Password_Wizard/.)
 
 
 
