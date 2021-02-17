@@ -1,18 +1,22 @@
 const express = require("express");
 const logger = require("morgan");
-const path = require("path");
 const mongoose = require("mongoose");
-
-const Workout = require("./models/workouts");
-
+const htmlRoutes = require("./routes/html-routes");
+const apiRoutes = require("./routes/api-routes");
 const PORT = process.env.PORT || 4000;
+const app = express();
+
+app.use(express.urlencoded({
+    extended: true
+}));
+app.use(logger("dev"));
+app.use(express.json());
+app.use(express.static("public"));
+
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {useNewUrlParser: true});
 
-const app = express();
 
-app.use(logger("dev"));
-app.use(express.static("public"));
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
