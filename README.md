@@ -34,6 +34,6 @@ The user is be able to:
 * Express
 
 ## Heroku Links
-[Jet_fast_workout_tracker](https://stephimarie.github.io/Password_Wizard/.)
+[Jet_fast_workout_tracker](https://stephimarie.)
 
 
