@@ -34,6 +34,6 @@ The user is be able to:
 * Express
 
 ## Heroku Links
-[Jet_fast_workout_tracker](https://stephimarie.)
+[Jet_fast_workout_tracker](https://github.com/stephimarie/Jet_fast_workout_tracker)
 
 
